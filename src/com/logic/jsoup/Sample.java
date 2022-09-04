@@ -18,7 +18,7 @@ public class Sample {
             metaData.put("SiteHeader", getSiteHeader(siteData));
             metaData.put("FlashNews",getFlashNews(siteData));
             metaData.put("TopStories",getTopStories(siteData));
-            FileWriter myWriter = new FileWriter("WebContent\\Index.html");
+            FileWriter myWriter = new FileWriter("Index.html");
             myWriter.write(siteData.html());
             myWriter.close();
         } catch (IOException e) {
